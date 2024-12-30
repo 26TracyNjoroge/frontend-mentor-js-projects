@@ -17,5 +17,5 @@ Below is a list of the completed challenges:
 
 - [Faq Accordion](https://frontend-mentor-js-faq-accordion.vercel.app/)
 
-- [Article Preview]()
+- [Article Preview](https://frontend-mentor-js-article-preview-card.vercel.app/)
 
