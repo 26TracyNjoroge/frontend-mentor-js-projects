@@ -27,6 +27,7 @@ figcaption {
 }
 
 body {
+    font-family: "Manrope", serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,16 +42,33 @@ img {
 
 .article-container {
     display: flex;
-    max-width: 48rem;
+    max-width: 50rem;
     background-color: white;
 }
 
 .article-left {
-    width: 50%;
+    width: 40%;
 }
 
 .article-right {
-    width: 50%;
+    width: 60%;
+    padding: 34px;
+}
+
+.article-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-heading {
+    color: var(--clr-dark-grayish-blue);
+    margin-bottom: 11px;
+}
+
+.article-details {
+    color: var(--clr-desaturated-dark-blue);
+    margin-bottom: 13px;
+    font-size: 0.94rem;
 }
 
 .author {
@@ -64,24 +82,35 @@ img {
 }
 
 .author-infor {
-    margin-top: 6px;
+    margin-top: 3px;
 }
 
 .author-name {
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+    color: var(--clr-dark-grayish-blue);
+    font-size: 0.92rem;
+}
+
+.date {
+    color: var(--clr-grayish-blue);
+    font-size: 0.72rem;
+
 }
 
 .author-img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 }
 
 .share-to-socials {
+    cursor: pointer;
+    z-index: 20;
     width: 34px;
     height: 34px;
     border-radius: 50%;
     margin-top: 8px;
+    background-color: var(--clr-grayish-blue);
 }
 
 .attribution { 
