@@ -44,20 +44,26 @@ img {
     display: flex;
     max-width: 50rem;
     background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .article-left {
-    width: 40%;
+    width: 45%;
 }
 
 .article-right {
-    width: 60%;
+    width: 55%;
     padding: 34px;
 }
 
 .article-img {
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .article-heading {
@@ -67,7 +73,7 @@ img {
 
 .article-details {
     color: var(--clr-desaturated-dark-blue);
-    margin-bottom: 13px;
+    margin-bottom: 18px;
     font-size: 0.94rem;
 }
 
@@ -94,7 +100,6 @@ img {
 .date {
     color: var(--clr-grayish-blue);
     font-size: 0.72rem;
-
 }
 
 .author-img {
@@ -104,13 +109,21 @@ img {
 }
 
 .share-to-socials {
-    cursor: pointer;
-    z-index: 20;
-    width: 34px;
-    height: 34px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     margin-top: 8px;
-    background-color: var(--clr-grayish-blue);
+    margin: 0 auto;
+}
+
+.socials-container {
+    margin-top: 3px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--clr-bight-grayish-blue);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
 }
 
 .attribution { 
@@ -122,4 +135,52 @@ img {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 48px;
+    }
+
+    .article-container {
+        flex-direction: column;
+        max-width: 33rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .article-img {
+        display: block;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .article-left {
+        width: 100%;
+    }
+    
+    .article-right {
+        width: 100%;
+        padding: 34px;
+        padding: 42px 42px 30px 42px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .article-heading {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .article-details {
+        margin-bottom: 30px;
+        font-size: 0.89rem;
+        line-height: 1.5;
+    }
+
+    .attribution { 
+        display: none;
+    }
 }
