@@ -7,6 +7,7 @@
     --White: hsl(0, 0%, 100%);
     --primary-color: #301534;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -32,7 +33,7 @@ h1 {
 }
 
 h4 {
-    font-weight: 600;
+    font-weight: 2.1rem;
     color: var(--primary-color);
 }
 
@@ -40,7 +41,7 @@ li {
     list-style-type: none;
 }
 
-p {
+.accordion-content {
     margin-bottom: 14px;
     padding-left: 4px;
     padding-right: 8px;
@@ -60,9 +61,10 @@ p {
     border-radius: 10px;
 }
 
-.container-section {
+.accordion {
     margin-bottom: 18px;
-    
+    border-radius: 6px;
+    border: 1px solid #ece6ec;
 }
 
 .heading {
@@ -70,19 +72,43 @@ p {
     align-items: center;
     gap: 10px;
     margin-bottom: 24px;
-
 }
 
-.sub-heading {
+.accordion-heading {
     display: flex;
     align-items: center;
-    margin-bottom: 18px;
     justify-content: space-between;
+    padding: 8px;
 }
 
-.sub-heading img {
-    width: 24px;
-    height: 24px;
+.accordion-heading h4 {
+    width: 400px; 
+}
+
+.accordion-heading:hover {
+    cursor: pointer; 
+    background-color: #f4f1f5;  
+}
+
+.accordion-icon {
+    background-image: url(/images/icon-plus.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 30px;
+    height: 31px;
+}
+
+.accordion-content {
+    display: none;
+}
+
+.accordion.active .accordion-content {
+    display: block;
+}
+
+.accordion.active .accordion-icon {
+    background-image: url(/images/icon-minus.svg);
 }
 
 .attribution { 
@@ -98,16 +124,18 @@ p {
     .body {
         background: url(images/background-pattern-mobile.svg);
         background-repeat: no-repeat;
+        background-size: ;
+        background-position: center;
     }
 
     .container {
-        width: 380px;
-        padding-top: 1px;
+        width: 340px;
+        padding: 24px;
         margin-top: 30px;
         border-radius: 10px;
     }
 
-    p {
+    .accordion-content {
         font-size: 0.9rem;
         margin-bottom: 14px;
         padding-left: 4px;
@@ -122,20 +150,28 @@ p {
     }
 
     h4 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: 14px;
     }
 
-    .container-section {
+    .accordion {
         margin-bottom: 18px;
-        
     }
 
-    .sub-heading.one , 
-    .sub-heading.two,
-    .sub-heading.three,
-    .sub-heading.four {
-    display: flex;
-    justify-content: space-between;
+    .accordion-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .accordion-heading h4 {
+        width: 240px; 
+    }
+
+    .accordion-icon {
+        width: 26px;
+        height: 27px;
+        margin-bottom: 12px;
+    }   
+
 }
-}
+
