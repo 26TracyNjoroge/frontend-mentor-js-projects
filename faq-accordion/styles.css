@@ -24,7 +24,6 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 
-
 h1 {
     font-size: 2.4rem;
     font-weight: 700;
@@ -32,24 +31,14 @@ h1 {
     color: var(--primary-color);
 }
 
-h4 {
+h2 {
+    font-size: 1.1rem;
     font-weight: 2.1rem;
     color: var(--primary-color);
 }
 
 li {
     list-style-type: none;
-}
-
-.accordion-content {
-    text-align:justify;
-    text-justify:inter-word;
-    margin-bottom: 14px;
-    padding-left: 8px;
-    padding-right: 24px;
-    opacity: 0.5;
-    color: var(--primary-color);
-    display: none;
 }
 
 .heading img {
@@ -84,7 +73,7 @@ li {
     padding: 8px;
 }
 
-.accordion-heading h4 {
+.accordion-heading h2 {
     width: 450px; 
 }
 
@@ -102,8 +91,25 @@ li {
     height: 31px;
 }
 
+.accordion-content {
+    text-align:justify;
+    text-justify:inter-word;
+    margin-bottom: 14px;
+    padding-left: 8px;
+    padding-right: 24px;
+    opacity: 0.5;
+    color: var(--primary-color);
+    max-height: 0;                   
+    overflow: hidden;                
+    opacity: 0;  
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+
 .accordion.active .accordion-content {
-    display: block;
+    max-height: 300px;
+    opacity: 0.6;
+    padding: 8px 8px;               
+    margin-bottom: 14px;
 }
 
 .accordion.active .accordion-icon {
@@ -149,7 +155,7 @@ li {
         margin-bottom: 10px;
     }
 
-    h4 {
+    h2 {
         font-size: 0.9rem;
         margin-bottom: 14px;
     }
@@ -163,7 +169,7 @@ li {
         justify-content: space-between;
     }
 
-    .accordion-heading h4 {
+    .accordion-heading h2 {
         width: 240px; 
     }
 
