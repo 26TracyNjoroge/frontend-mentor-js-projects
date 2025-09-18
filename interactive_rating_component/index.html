@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="styles.css"/>
+  
+</head>
+<body>
+  <div class="container">
+
+    <div class="rating-state">
+      <header class="rating">
+        <img src="/images/icon-star.svg" alt="Rating star" class="star-icon">
+      </header>
+      <main>
+          <h1 class="rating-quiz">How did we do?</h1>
+          <p class="rating-quiz-detailed">
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+          <form class="rating-numbers">
+            <div class="rating-wrapper">
+              <div class="rates">1</div>
+              <div class="rates">2</div>
+              <div class="rates">3</div>
+              <div class="rates">4</div>
+              <div class="rates">5</div>
+            </div>
+            <button>SUBMIT</button>
+          </form>
+      </main>
+    </div>
+
+    <div class="thank-you-state">
+      <header class="selected-rate">
+        <img src="/images/illustration-thank-you.svg" alt="Thank you Illustration" class="thank-you-icon"/>
+        <p>You selected <span class="chosen-rate">4</span> out of 5</p>
+      </header>
+
+      <main>
+        <h2 class="thank-you-heading">Thank you!</h2>
+        <p class="thank-you-detailed">
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </main>
+    </div>
+    
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tracy Njoroge</a>.
+  </footer>
+</body>
+</html>

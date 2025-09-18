@@ -1,0 +1,193 @@
+:root {
+    --primary-color: #141519;
+    --secondary-color: #202731;
+
+    --orange-color: #FC7613;
+    --numbers-color: #262E38;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+    text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+    max-width: 65ch;
+    text-wrap: pretty;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: "Overpass", sans-serif;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    background-color: var(--secondary-color);
+    width: 440px;
+    border-radius: 16px;
+    padding: 26px;
+}
+
+.rating {
+    background-color: #262F38;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: 36px;
+}
+
+.rating-state {
+    /* display: none; */
+}
+
+.rating-quiz {
+    margin-bottom: 16px;
+}
+
+.rating-quiz-detailed {
+    margin-bottom: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    opacity: 0.7;
+}
+
+.rating-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.rates {
+    background-color: #262F38;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.rates:hover {
+    background-color: var(--orange-color);
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--orange-color);
+    color: rgb(15, 15, 15);
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px;
+    border-radius: 26px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    transition: background-color 0.3s ease-in-out;
+} 
+
+button:hover {
+    background-color: #FFFFFF;
+}
+
+.thank-you-state {
+    display: none;
+}
+
+.thank-you-icon {
+    width: 140px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.selected-rate p {
+    background-color: #262F38;
+    color: var(--orange-color);
+    padding: 12px;
+    border-radius: 26px;
+    text-align: center;
+    width: 78%;
+    margin: 0 auto;
+    margin-bottom: 38px;
+}
+
+.thank-you-heading {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 8px;
+}
+
+.thank-you-detailed {
+    text-align: center;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+.attribution {
+    font-size: 0.875rem; 
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+
+}
+
+.attribution a {
+    color: var(--orange-color);
+    text-decoration: none; 
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 300px;
+    }
+
+    .rating-quiz {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .rating-quiz-detailed {
+        font-size: 0.9rem;
+    }
+
+    .rating-quiz-detailed {
+        width: 260px;
+    }
+
+    .rates {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
