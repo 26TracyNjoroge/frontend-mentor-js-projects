@@ -22,8 +22,18 @@ inputWrapper.addEventListener("change", (e) => {
 
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
-    ratingElement.style.display = 'none';
-    thankyouElement.style.display = 'block';
 
-    chosenRate.textContent = `${selectedRating}`
+    if(selectedRating === ""){
+        submitButton.style.backgroundColor = 'red';
+
+        setTimeout(() => {
+            submitButton.style.backgroundColor = '#FC7613'
+        }, 2000);
+    } else {
+        ratingElement.style.display = 'none';
+        thankyouElement.style.display = 'block';
+
+        chosenRate.textContent = `${selectedRating}`
+
+    }
 })

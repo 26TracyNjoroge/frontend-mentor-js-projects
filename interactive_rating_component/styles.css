@@ -58,10 +58,6 @@ body {
     margin-bottom: 36px;
 }
 
-.rating-state {
-    /* display: none; */
-}
-
 .rating-quiz {
     margin-bottom: 16px;
 }
@@ -105,7 +101,7 @@ input {
     color: black;
 }
 
-button {
+.submit-btn {
     background-color: var(--orange-color);
     color: rgb(15, 15, 15);
     border: none;
@@ -119,7 +115,7 @@ button {
     transition: background-color 0.3s ease-in-out;
 } 
 
-button:hover {
+.submit-btn:hover {
     background-color: #FFFFFF;
 }
 
@@ -134,7 +130,7 @@ button:hover {
     margin-bottom: 32px;
 }
 
-.selected-rate p {
+.rating-description {
     background-color: #262F38;
     color: var(--orange-color);
     padding: 12px;
