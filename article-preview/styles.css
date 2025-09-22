@@ -6,8 +6,8 @@
 }
 
 *,
-*::before,
-::after {
+*::after,
+::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -26,6 +26,52 @@ figcaption {
     text-wrap: pretty;
 }
 
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+
+@font-face {
+    font-display: swap;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    src: url(/assets/fonts/manrope-v20-latin-500.woff2);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/assets/fonts/manrope-v20-latin-700.woff2);
+}
+
+
 body {
     font-family: "Manrope", serif;
     display: flex;
@@ -33,11 +79,6 @@ body {
     align-items: center;
     min-height: 100svh;
     background-color: var(--clr-bight-grayish-blue);
-}
-
-img {
-    display: block;
-    width: 100%;
 }
 
 .article-container {
