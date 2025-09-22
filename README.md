@@ -15,7 +15,10 @@ You can learn more about Frontend Mentor [here](https://www.frontendmentor.io/).
 ## Projects
 Below is a list of the completed challenges:
 
-- [Faq Accordion](https://frontend-mentor-js-faq-accordion.vercel.app/)
-
 - [Article Preview](https://frontend-mentor-js-article-preview-card.vercel.app/)
 
+- [Base Apparel Coming Soon]()
+
+- [Faq Accordion](https://frontend-mentor-js-faq-accordion.vercel.app/)
+
+- [Interactive Rating Component](https://github.com/26TracyNjoroge/Frontend-Mentor-js/tree/main/interactive_rating_component)
