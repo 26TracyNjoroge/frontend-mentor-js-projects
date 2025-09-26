@@ -1,6 +1,6 @@
 :root {
 --clr-dark-grayish-blue: hsl(217, 19%, 35%);
---clr-desaturated-dark-blue: hsl(214, 17%, 51%);
+--clr-desaturated-dark-blue: hsl(214, 23%, 55%);
 --clr-grayish-blue: hsl(212, 23%, 69%);
 --clr-bight-grayish-blue: hsl(210, 46%, 95%);
 }
@@ -121,6 +121,7 @@ body {
 .author {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .author-details {
@@ -167,6 +168,51 @@ body {
     border-radius: 50%;
 }
 
+.share-link-card {
+    background-color: #49556B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    padding: 16px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 60px;
+    left: 68%;
+}
+
+.hidden {
+    display: none;
+}
+
+.share-link-card::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    border-top: 8px solid #49556B;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+
+.share,
+.share-mobile {
+    color: var(--clr-desaturated-dark-blue);
+    letter-spacing: 1.5px;
+}
+
+.facebook-icon, 
+.twitter-icon,
+.pinterest-icon {
+    width: 20px;
+    height: 15px;
+}
+
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -210,15 +256,52 @@ body {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
+
+    .author-name {
+        font-size: 0.65rem;
+    }
+
     .article-heading {
         font-size: 1.2rem;
         margin-bottom: 15px;
     }
 
     .article-details {
-        margin-bottom: 30px;
+        margin-bottom: 26px;
         font-size: 0.89rem;
         line-height: 1.5;
+    }
+
+    .share-link-mobile {
+        background-color: #49556B;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px 34px 20px 16px;
+        bottom: 60px;
+        left: 68%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-top: -20px;
+    }
+
+    .share-link-mobile.hidden {
+        display: none;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+    }
+
+    .facebook-icon-mobile, 
+    .twitter-icon-mobile,
+    .pinterest-icon-mobile {
+        width: 25px;
+        height: 19px;
     }
 
     .attribution { 
