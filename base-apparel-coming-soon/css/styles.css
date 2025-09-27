@@ -43,25 +43,79 @@ a {
   color: inherit;
 }
 
+@font-face {
+    font-display: swap;
+    font-family: "Josefin";
+    font-style: normal;
+    font-weight: 300;
+    src: url(/assets/fonts/josefin-sans-v34-latin-300.woff2);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Josefin";
+    font-style: normal;
+    font-weight: 600;
+    src: url(/assets/fonts/josefin-sans-v34-latin-600.woff2);
+}
+
 
 body {
     min-height: 100svh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Josefin", serif;
+    background-color: #0E0E0E;
 }
 
 .container {
     border: 1px solid red;
+    max-width: 900px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.left-section,
-.right-section {
-    width: 50%;
+.left-section {
+    width: 60%;
+    padding: 40px 50px 28px 104px;
+    background-color: #FFF6F5;
 }
 
+.apparel-logo {
+    margin-bottom: 80px;
+}
+
+.apparel-heading {
+    font-size: 2.7rem;
+    letter-spacing: 0.5rem;
+    line-height: 2.87rem;
+    margin-bottom: 12px;
+    color: hsl(0, 6%, 24%);
+}
+
+.colored-heading {
+    font-weight: normal;
+    letter-spacing: 0.8rem;
+    font-size: 2.4rem;
+    color: hsl(0, 36%, 70%);
+}
+
+.apparel-details {
+    font-size: 0.7rem;
+    max-width: 290px;
+    line-height: 1rem;
+    color: hsl(0, 36%, 70%);
+}
+
+.right-section {
+    width: 40%;
+}
+
+.hero-image {
+    width: 100%;
+}
 
 .attribution { 
     font-size: 11px; 
