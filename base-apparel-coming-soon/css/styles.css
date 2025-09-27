@@ -51,8 +51,15 @@ body {
     align-items: center;
 }
 
-.wrapper {
+.container {
     border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-section,
+.right-section {
+    width: 50%;
 }
 
 
