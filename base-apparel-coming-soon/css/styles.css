@@ -107,7 +107,48 @@ body {
     max-width: 290px;
     line-height: 1rem;
     color: hsl(0, 36%, 70%);
+    margin-bottom: 26px;
 }
+
+.email-signup {
+    padding: 1;
+    border: none;
+    border-radius: 38px;
+    max-width: 277px;
+    font-size: 0.65rem;
+    display: flex;
+    position: relative;
+}
+
+.email-signup-input {
+    border: none;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.email-signup-button {
+    background-color: #F1A1A2; 
+    border: 1px solid red;
+    width: 60px;
+    height: 33px;
+    border-radius: 38px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    cursor: pointer;
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.email-submit-icon {
+    width: 8px;
+    height: 12px;
+}
+
 
 .right-section {
     width: 40%;
