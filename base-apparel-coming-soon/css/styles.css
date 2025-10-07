@@ -185,7 +185,7 @@ body {
     position: absolute;
     top: 18%;
     right: 60px;
-    /* display: none; */
+    display: none;
 }
 
 .error-text {
@@ -194,7 +194,19 @@ body {
     color: var(--primary-desaturated-red-clr);
     top: 50px;
     font-size: 0.8rem;
-    /* display: none; */
+    display: none;
+}
+
+.email-signup.show .error-icon{
+    display: block;
+}
+
+.email-signup.show .error-text{
+    display: block;
+}
+
+.email-signup.show .email-signup-input{
+    border: 2px solid var(--primary-soft-red-clr);
 }
 
 @media (max-width: 768px) {
