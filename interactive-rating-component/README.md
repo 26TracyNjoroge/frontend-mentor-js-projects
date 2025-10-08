@@ -19,7 +19,7 @@ It is a good project for practicing user interactions and updating the DOM.
 ### Links
 
 - Github Repository: [Respository](https://github.com/26TracyNjoroge/Frontend-Mentor-js/tree/main/interactive_rating_component)
-- Link site URL: [Live Demo](https://frontend-mentor-js-tfq9.vercel.app/)
+- Link site URL: [Live Demo](https://frontend-mentor-interactive-rating-zeta.vercel.app/)
 
 ## My process
 
