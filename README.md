@@ -1,6 +1,6 @@
 # Frontend Mentor Challenges - JavaScript
 
-This repository contains my solutions to various Frontend Mentor challenges. Each challenge is stored in its own folder along with a project-specific `README.md` describing the solution.
+This repository contains my solutions to various Frontend Mentor challenges using HTML, CSS, and JavaScript. Each challenge is stored in its own folder along with a project-specific `README.md` describing the solution.
 
 ## About Frontend Mentor
 Frontend Mentor provides real-world projects to help developers practice and enhance their front-end coding skills. The challenges are designed for different skill levels, from beginner to advanced.
