@@ -129,7 +129,6 @@ body {
     height: 60px;
     width: 450px;
     margin: 0 auto;
-    margin-bottom: 30px;
     margin-left: 0;
 }
 
@@ -191,7 +190,6 @@ body {
     opacity: .6;
     top: 70px;
     font-size: 0.98rem;
-    margin-bottom: 12px;
     display: none;
 }
 
