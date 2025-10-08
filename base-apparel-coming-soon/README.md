@@ -17,7 +17,7 @@ Users should be able to:
 ### Links
 
 - Github Repository: [Respository](https://github.com/26TracyNjoroge/frontend-mentor-js-projects/tree/main/base-apparel-coming-soon)
-- Link site URL: [Live Demo]()
+- Link site URL: [Live Demo](https://frontend-mentor-base-apparel-nu.vercel.app/)
 
 ## My process
 
