@@ -21,4 +21,4 @@ Below is a list of the completed challenges:
 
 - [FAQ Accordion](https://frontend-mentor-js-faq-accordion.vercel.app/)
 
-- [Interactive Rating Component](https://github.com/26TracyNjoroge/Frontend-Mentor-js/tree/main/interactive_rating_component)
+- [Interactive Rating Component](https://frontend-mentor-interactive-rating-zeta.vercel.app/)
