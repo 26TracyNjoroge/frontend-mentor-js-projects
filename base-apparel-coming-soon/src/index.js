@@ -10,14 +10,15 @@ const handleValidation = (e) => {
 
     if (!regEx.test(inputEl.value)) {
         formEl.classList.add("show");
-        formEl.classList.add("show");
-        
     } else {
-        formEl.classList.remove("show");
-        formEl.classList.remove("show");
         alert("Thank you! Check your email.")
         inputEl.value = "";
     }
 }
 
-formEl.addEventListener('submit',handleValidation)
+const handleError = () => {
+    formEl.classList.remove("show");
+}
+
+inputEl.addEventListener("input", handleError);
+formEl.addEventListener('submit',handleValidation);
