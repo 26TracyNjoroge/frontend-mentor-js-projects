@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="A responsive coming soon page with email signuo, validation and hover effects for a clean, modern design."/>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <link rel="preload" href="/assets/fonts/libre-franklin-v20-latin-600.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="/assets/fonts/libre-franklin-v20-latin-600.woff2" as="font" type="font/woff2" crossorigin/>
+  <link rel="preload" href="/assets/fonts/libre-franklin-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="/css/styles.css"/>
+
+</head>
+<body>
+
+  <header class="ping-page-header">
+    <img src="/assets/images/logo.svg" alt="Ping" class="ping-logo" />
+  </header>
+
+  <main class="ping-page-main">
+    <h1 class="ping-page-heading"><span class="page-heading-light">We are launching</span> soon!</h1>
+    <p class="ping-page-subscribe">Subscribe and get notified</p>
+
+    <form class="ping-page-form">
+      <div class="form-group">
+        <input 
+          type="email" 
+          id="email" 
+          name="email"
+          class="ping-form-email" 
+          placeholder="Your email address..."
+          aria-describedby="email-error"
+        />
+        <p id="email-error" class="error-forgot-email hidden">Whoops! It looks like you forgot to add your email</p>
+        <p id="email-error" class="error-invalid-email hidden">Please provide a valid email address</p>
+      </div>
+      <button type="submit" class="submit-form">Notify Me</button>
+    </form>
+
+    <figure class="ping-page-illustration">
+      <img src="assets/images/illustration-dashboard.png" alt="Illustration Dashboard" class="ping-page-illustration">
+    </figure>
+  </main>
+
+  <footer>
+    <ul class="ping-page-socials">
+      <li class="ping-social-item">
+        <a href="https://www.facebook.com/" title="Facebook Page" class="social-item-facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li class="ping-social-item">
+        <a href="https://www.x.com/" title="X Page" class="social-item-x">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </li>
+      <li class="ping-social-item">
+        <a href="https://www.instagram.com/" title="Instagram Page" class="social-item-instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+    <p class="attribution">
+      &copy; Copyright Ping. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>

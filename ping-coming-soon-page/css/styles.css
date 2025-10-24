@@ -1,0 +1,131 @@
+*,
+*::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-wrap: balance; 
+} 
+
+p,
+li,
+figcaption {
+    max-width: 65ch;
+    text-wrap: pretty;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/libre-franklin-v20-latin-300.woff2') 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/libre-franklin-v20-latin-600.woff2')
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/libre-franklin-v20-latin-700.woff2') format('woff2'); 
+}
+
+html {
+    overflow: hidden;
+}
+
+ body {
+    background-color: #FFFFFF;
+    text-align: center;
+    font-family: 'Libre Franklin', serif;
+    padding: 0 6rem;
+ }
+
+ .ping-logo {
+    margin: 10.4rem auto 5.2rem auto;
+    width: 7rem;
+ }
+
+ .ping-page-heading {
+    font-size: 2.66rem;
+    margin-bottom: 2.1rem;
+ }
+
+ .page-heading-light {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+ }
+
+ .ping-page-subscribe {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+ }
+
+ .ping-form-email,
+ .submit-form {
+    padding: 1.9rem;
+    border-radius: 3rem;
+    width: 100%;
+ }
+
+  .ping-form-email {
+    border: 2px solid hsl(223, 100%, 88%);
+    padding-left: 3.2rem;
+    margin-bottom: 18px;
+ }
+
+ .ping-form-email::placeholder {
+    font-size: 1.6rem;
+    opacity: 0.5;
+ }
+
+ .submit-form {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+ }
+
+ .hidden {
+    display: none;
+ }
