@@ -108,7 +108,7 @@ a {
 .error-message {
    margin-top: .6rem;
    font-size: .72rem;
-   color: red;
+   color: hsl(354, 100%, 66%);
 }
 
 .ping-form-email {
@@ -141,7 +141,7 @@ a {
  }
 
  .invalid {
-   border:1px solid red;
+   border:1px solid hsl(354, 100%, 66%);
  }
 
  .ping-page-illustration {
@@ -212,6 +212,10 @@ a {
       font-size: .8rem;
   }
 
+  .error-message {
+      font-size: .8rem;
+   }
+
   .submit-form {
       flex: 1;
       width: auto;
@@ -219,6 +223,14 @@ a {
       font-size: .8rem;
       box-shadow: 0px 5px 15px hsla(223, 76%, 66%, 0.4);
   }
+
+  .ping-social-item {
+      font-size: .8rem;
+   }
+
+  .attribution {
+      font-size: .8rem;
+   }
 
 }
 
