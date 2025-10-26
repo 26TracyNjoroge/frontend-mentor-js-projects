@@ -121,6 +121,11 @@ a {
    opacity: 0.5;
 }
 
+.ping-form-email:focus {
+   outline: 2px solid hsl(354, 100%, 66%);
+   border: none;
+}
+
 .submit-form {
    background-color: hsl(223, 87%, 63%);
    color: white;
@@ -136,7 +141,12 @@ a {
    background-color: hsl(223, 87%, 70%);
 }
 
- .hidden {
+.submit-form:focus {
+   outline: 2px solid hsl(354, 100%, 66%);
+   border: none;
+}
+
+.hidden {
     display: none;
  }
 
@@ -156,7 +166,7 @@ a {
    gap: 12px;
 }
 
-.ping-social-item {
+.social-item {
    color: hsl(223, 87%, 63%);
    padding: .4rem;
    border: 1px solid hsl(223, 100%, 88%);
@@ -165,10 +175,14 @@ a {
    transition: all 0.3s ease;
 }
 
-.ping-social-item:hover {
+.social-item:hover {
    background-color: hsl(223, 87%, 63%);
    color: white;
+}
 
+.social-item:focus {
+   outline: 2px solid hsl(354, 100%, 66%);
+   border: none;
 }
 
 .ping-page-footer {
@@ -224,7 +238,7 @@ a {
       box-shadow: 0px 5px 15px hsla(223, 76%, 66%, 0.4);
   }
 
-  .ping-social-item {
+  .social-item {
       font-size: .8rem;
    }
 
